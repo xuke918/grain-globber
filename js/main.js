@@ -1,9 +1,12 @@
-var listGrains = function (grains) {
-  grains.forEach(function (item) {
-    document.write('<h2>' + item.name + '</h2>');
-    document.write('<img src="images/' + grains.img + '" alt="">');
-    document.write('desc');
-  });
-};
+var $ul = $('ul');
 
-listGrains(grains);
+$ul.addClass('grains');
+
+grains.forEach(function (grain) {
+  var $li = $('<li>');
+  var $img = $('<img>');
+
+  $img.attr('src', 'images/' + grain.img);
+  $ul.append($li);
+  $li.append($img);
+});
