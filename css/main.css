@@ -17,12 +17,13 @@ html {
 .grains li {
   display: block;
   padding-bottom: 1.5em;
+  clear: both;
 }
 
 .grains img {
   width: 100px;
   float: left;
-  padding-right: 0.5em;
+  margin-right: 0.5em;
 }
 
 .grains h2 {
